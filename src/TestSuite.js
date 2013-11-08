@@ -80,7 +80,7 @@ function Logger()
 	
 	function beautifyCamelCase( string ) 
 	{
-		string = string.replace(/([a-z])([A-Z])/g, '$1 $2');
+		string = string.replace(/([a-z0-9])([A-Z])/g, '$1 $2');
 		string = string.toLowerCase();
 		
 		return string;
